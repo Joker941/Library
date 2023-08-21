@@ -1,3 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* General design */
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    height: 800px;
+}
+
+/* End of general design */
+
+/* Placement */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 100%;
+    background-image: url("./line/studio-media-9DaOYUYnOls-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.left {
+    grid-column: 1 / 2;
+}
+
+.right {
+    grid-column: 3 / 4;
+}
+
+.left, .right {
+    background-color: #212738;
+    grid-row: 1 / 6;
+}
+
+.contents {
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+}
+
+/* End of placement */
+
+.contents h1 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #028090;
+    border: 1px solid black;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 5px;
+    color: #CFAF97;
+}
+
+.showForm {
+    width: 30%;
+    margin: 25px 35% 0 35%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #028090;
+    
+}
+
+.showForm:hover {
+    color: #CFAF97;
+    box-shadow: inset 0 0 10px #CFAF97;
+    cursor: pointer;
+}
+
 .addBook {
     display: none;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0 1rem 0;
+
+}
+.addBook input, .addBook button {
+    height: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid black;
+}
+.addBook button {
+    padding: 0.1rem 0 0.1rem 0;
+}
+.book {
+    background-color: rgba(2, 128, 144, 0.5);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr, 1fr, 0.5fr;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 5px;
+}
+
+.book h3 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    border-bottom: 3px solid black;
+}
+
+.bookInfos {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.changeRead {
+    height: 2rem;
+    border: none;
+    background-color: #CFAF97;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(2, 128, 144, 0.5);
+}
+
+.changeRead:hover {
+    color: rgba(2, 128, 144, 0.5);
+    cursor: pointer;
+}
+.bookInfos:nth-child(1) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.deleteBook {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: #CFAF97;
+    border: none;
+}
+.deleteBook:hover {
+    color: rgba(2, 128, 144, 0.5);
+    cursor: pointer;
 }

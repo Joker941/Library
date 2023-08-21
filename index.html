@@ -19,18 +19,32 @@
 
         <div class="contents">
 
+            <h1>Library</h1>
             <div class="addBook">
-                <input type="text" name="bookTitle" id="bookTitle">
-                <input type="text" name="author" id="author">
-                <input type="text" name="pages" id="pages">
-                <input type="text" name="read" id="read">
+                <input type="text" name="bookTitle" id="bookTitle" placeholder="Title">
+                <input type="text" name="author" id="author" placeholder="Author">
+                <input type="text" name="pages" id="pages" placeholder="Number of pages">
+                <input type="radio" name="read" id="read"><label for="read">Read</label>
+                <input type="radio" name="read" id="notRead"><label for="notRead">Not read</label>
                 <button class="addBook">Add book</button>
             </div>
-            
-            <button class="showForm">Add</button>
 
-            <div class="books">
+            <button class="showForm">Add a new book</button>
 
+            <div class="book">
+                <h3>L'homme illustré</h3>
+                <div class="bookInfos">
+                    <p>By Ray Bradbury, 336 pages.</p><p>Read</p> <button class="changeRead">Not read ?</button>
+                </div>
+                <button class="deleteBook">Delete this book from your library</button>
+            </div>
+
+            <div class="book">
+                <h3>L'homme illustré</h3>
+                <div class="bookInfos">
+                    <p>By Ray Bradbury, 336 pages.</p><p>Read</p> <button class="changeRead">Not read ?</button>
+                </div>
+                <button class="deleteBook">Delete this book from your library</button>
             </div>
 
         </div>
