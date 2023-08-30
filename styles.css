@@ -62,7 +62,6 @@ html, body {
     border-radius: 5px;
     border: none;
     background-color: #028090;
-    
 }
 
 .showForm:hover {
@@ -73,7 +72,6 @@ html, body {
 
 .addBook {
     display: none;
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     padding: 1rem 0 1rem 0;
